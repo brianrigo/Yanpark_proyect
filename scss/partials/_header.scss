@@ -1,0 +1,82 @@
+#header {
+    background-color: var(--primario);
+    clear: both;
+    content: '';
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position:relative;
+
+    .img_logo { /*IMAGEN LOGO HEADER*/
+        height: 60px;
+        padding-top:20px;
+        margin-bottom: 10px;
+    }
+    .hamburger { /*MENÚ HAMBURGUESAS*/
+
+        display: none;
+        color: var(--terciario)
+    }
+    
+    .check-style {
+        display: none;
+        position: absolute;
+        width: 60px;
+        height: 35px;
+        top: 82px;
+        opacity: 0;
+    }
+        .nav {
+            margin-right: 30px;
+
+            .nav_link {
+                text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: 1.5px;
+                font-family: 'Raleway', Arial, sans-serif;
+                text-align: center;
+
+                .nav_link_li { /*PAGINAS DE NAV*/
+                    float: left;
+                    list-style: none;
+                    margin: 20px;
+                }
+                .animation_nav {
+                    position: relative;
+                    padding: 0.5em 0.8em;
+                    text-decoration: none;
+                    color: var(--terciario);
+
+                &:before,
+                &:after {
+                    height: 14px;
+                    width: 14px;
+                    position: absolute;
+                    content: '';
+                }
+                &:before {
+                    left: 0;
+                    top: 0;
+                    border-bottom: 3px solid var(--terciario);
+                    -webkit-transform: translate(100%, 50%);
+                    transform-style: preserve-3d;
+                    transform: translate(100%, 50%);
+                    top: -10px;
+                    transition: width 0.5s;
+                }
+
+                &:before,
+                &:after {
+                    -webkit-transform: translate(0%, 0%);
+                    transform-style: preserve-3d;
+                    transform: translate(0%, 0%);
+                    }
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

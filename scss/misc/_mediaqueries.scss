@@ -1,0 +1,89 @@
+/*::: MEDIA QUERIES :::*/
+    
+@media (max-width: 992px) {
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        }
+        & .nav_link{
+        display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: stretch; 
+
+        }
+
+    
+    .main-contact {
+
+        display: flex;
+        flex-direction: column;
+        gap: 80px }
+
+    .contact {
+
+        width: auto;;
+        height: auto;
+    }
+
+    .maps {
+
+        height: auto;
+        width: auto;
+    }    
+    .article__subtitle { 
+        
+        margin-top: 50px;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .user_info { 
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .gallery__div { 
+    
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        }
+        .section-servicios .article--servicios  {
+
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        padding: 50px;
+        }
+        .section2-servicios .div--card .article-card .card {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 200px;
+            gap: 10px;
+
+        }
+}
+
+
+    
+    @media (max-width: 576px) {   /*ESTILO IMÁGENES PARRALLAX*/
+        .nav_link { 
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: stretch; 
+        }
+
+
+    }
+}

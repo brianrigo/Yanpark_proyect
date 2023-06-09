@@ -1,0 +1,38 @@
+    /* VARIABLES */
+
+    :root {
+
+        /*Palette*/
+    
+        --primario: #297474;
+        --secundario: #ca9494;
+        --terciario: #ffffff;
+        --cuaternario: #51A3A3;
+        --quinario: #0d2033;    
+    
+            /* Font Sizes */
+    
+        --text-xxl: 48px;
+        --text-xl: 36px;
+        --text-lg: 32px;
+        --text-md: 20px;
+        --text-sm: 16px;
+        --text-xs: 12px;
+        --text-xxs: 10px;
+    
+
+    }
+
+* {
+margin: 0;
+padding:0;
+box-sizing: border-box;
+
+}
+
+body { 
+
+    font-size: var(--text-md);
+    font-family: 'Poppins', sans-serif;
+}
+
